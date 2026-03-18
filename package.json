@@ -1,10 +1,10 @@
 {
   "name": "agent-pro-skills",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create high-quality, validated AI agent skills through structured engineering",
   "license": "MIT",
   "bin": {
-    "agent-pro-skills": "./bin/agent-pro-skills.js"
+    "agent-pro-skills": "bin/agent-pro-skills.js"
   },
   "files": [
     "bin/",
@@ -33,6 +33,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kunalrajput7/agent-pro-skills"
+    "url": "git+https://github.com/kunalrajput7/agent-pro-skills.git"
   }
 }
