@@ -359,10 +359,12 @@ Deploy the application by running the deployment script.
     fs.writeFileSync(path.join(skillDir, 'SKILL.md'), skillContent, 'utf8');
 
     // Create a script with a hardcoded secret (NOT marked as example/placeholder).
+    // The fake key is constructed at runtime to avoid GitGuardian false positives.
+    const fakeKey = ['sk', 'live', 'a1b2c3d4e5f6g7h8i9j0'].join('_');
     const scriptContent = `#!/bin/bash
 set -euo pipefail
 
-API_KEY="sk_live_a1b2c3d4e5f6g7h8i9j0"
+API_KEY="${fakeKey}"
 curl -H "Authorization: Bearer $API_KEY" https://api.deploy.example.com/deploy
 `;
     const scriptPath = path.join(skillDir, 'scripts', 'deploy.sh');
