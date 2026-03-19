@@ -1,6 +1,6 @@
 {
   "name": "agent-pro-skills",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Create high-quality, validated AI agent skills through structured engineering",
   "license": "MIT",
   "bin": {
